@@ -1,0 +1,365 @@
+{
+  "registry": "{\"outputFormats\":[\"text\",\"json\"],\"flags\":[\"list-values\",\"focus-family\",\"output-format\",\"seed\",\"experimental-provider\"],\"generatorFamilies\":[{\"id\":\"code_analyzer\",\"registryId\":\"code-analyzer\",\"rendererKey\":\"classic-six.code_analyzer\",\"tranche\":\"classic-six\"},{\"id\":\"data_processing\",\"registryId\":\"data-processing\",\"rendererKey\":\"classic-six.data_processing\",\"tranche\":\"classic-six\"},{\"id\":\"jargon\",\"registryId\":\"jargon\",\"rendererKey\":\"classic-six.jargon\",\"tranche\":\"classic-six\"},{\"id\":\"metrics\",\"registryId\":\"metrics\",\"rendererKey\":\"classic-six.metrics\",\"tranche\":\"classic-six\"},{\"id\":\"network_activity\",\"registryId\":\"network-activity\",\"rendererKey\":\"classic-six.network_activity\",\"tranche\":\"classic-six\"},{\"id\":\"system_monitoring\",\"registryId\":\"system-monitoring\",\"rendererKey\":\"classic-six.system_monitoring\",\"tranche\":\"classic-six\"},{\"id\":\"agent_workflows\",\"registryId\":\"agent-workflows\",\"rendererKey\":\"modern-core.agent_workflows\",\"tranche\":\"modern-core\"},{\"id\":\"platform_engineering\",\"registryId\":\"platform-engineering\",\"rendererKey\":\"modern-core.platform_engineering\",\"tranche\":\"modern-core\"},{\"id\":\"observability_ai_runtime\",\"registryId\":\"observability-ai-runtime\",\"rendererKey\":\"modern-core.observability_ai_runtime\",\"tranche\":\"modern-core\"},{\"id\":\"delivery_preview_ops\",\"registryId\":\"delivery-preview-ops\",\"rendererKey\":\"modern-core.delivery_preview_ops\",\"tranche\":\"modern-core\"},{\"id\":\"supply_chain_security\",\"registryId\":\"supply-chain-security\",\"rendererKey\":\"modern-core.supply_chain_security\",\"tranche\":\"modern-core\"},{\"id\":\"ai_inference_ops\",\"registryId\":\"ai-inference-ops\",\"rendererKey\":\"fallback.ai_governance\",\"tranche\":\"fallback-ai_governance\"},{\"id\":\"evaluation_and_guardrails\",\"registryId\":\"evaluation-and-guardrails\",\"rendererKey\":\"fallback.ai_governance\",\"tranche\":\"fallback-ai_governance\"},{\"id\":\"knowledge_retrieval\",\"registryId\":\"knowledge-retrieval\",\"rendererKey\":\"fallback.ai_governance\",\"tranche\":\"fallback-ai_governance\"},{\"id\":\"edge_client_runtime\",\"registryId\":\"edge-client-runtime\",\"rendererKey\":\"fallback.ai_governance\",\"tranche\":\"fallback-ai_governance\"},{\"id\":\"identity_and_trust\",\"registryId\":\"identity-and-trust\",\"rendererKey\":\"fallback.ai_governance\",\"tranche\":\"fallback-ai_governance\"},{\"id\":\"aibom_provenance\",\"registryId\":\"aibom-provenance\",\"rendererKey\":\"fallback.ai_governance\",\"tranche\":\"fallback-ai_governance\"},{\"id\":\"agent_boundary_security\",\"registryId\":\"agent-boundary-security\",\"rendererKey\":\"fallback.ai_governance\",\"tranche\":\"fallback-ai_governance\"},{\"id\":\"embedded_agentic_pipeline\",\"registryId\":\"embedded-agentic-pipeline\",\"rendererKey\":\"fallback.ai_governance\",\"tranche\":\"fallback-ai_governance\"},{\"id\":\"data_governance_compliance\",\"registryId\":\"data-governance-compliance\",\"rendererKey\":\"fallback.ai_governance\",\"tranche\":\"fallback-ai_governance\"},{\"id\":\"finops_capacity\",\"registryId\":\"finops-capacity\",\"rendererKey\":\"fallback.ai_governance\",\"tranche\":\"fallback-ai_governance\"},{\"id\":\"blockchain_protocol_ops\",\"registryId\":\"blockchain-protocol-ops\",\"rendererKey\":\"fallback.security_blockchain\",\"tranche\":\"fallback-security_blockchain\"},{\"id\":\"cross_chain_interop\",\"registryId\":\"cross-chain-interop\",\"rendererKey\":\"fallback.security_blockchain\",\"tranche\":\"fallback-security_blockchain\"},{\"id\":\"proof_and_sequencer_ops\",\"registryId\":\"proof-and-sequencer-ops\",\"rendererKey\":\"fallback.security_blockchain\",\"tranche\":\"fallback-security_blockchain\"},{\"id\":\"hybrid_runtime_ops\",\"registryId\":\"hybrid-runtime-ops\",\"rendererKey\":\"fallback.overlay_quantum\",\"tranche\":\"fallback-overlay_quantum\"},{\"id\":\"capacity_cost_controller\",\"registryId\":\"capacity-cost-controller\",\"rendererKey\":\"fallback.overlay_quantum\",\"tranche\":\"fallback-overlay_quantum\"},{\"id\":\"batch_execution_tuner\",\"registryId\":\"batch-execution-tuner\",\"rendererKey\":\"fallback.overlay_quantum\",\"tranche\":\"fallback-overlay_quantum\"},{\"id\":\"compiler_maintainer\",\"registryId\":\"compiler-maintainer\",\"rendererKey\":\"fallback.overlay_quantum\",\"tranche\":\"fallback-overlay_quantum\"},{\"id\":\"interop_adapter_engineer\",\"registryId\":\"interop-adapter-engineer\",\"rendererKey\":\"fallback.overlay_quantum\",\"tranche\":\"fallback-overlay_quantum\"},{\"id\":\"preflight_capacity_planner\",\"registryId\":\"preflight-capacity-planner\",\"rendererKey\":\"fallback.overlay_quantum\",\"tranche\":\"fallback-overlay_quantum\"},{\"id\":\"simulator_performance_engineer\",\"registryId\":\"simulator-performance-engineer\",\"rendererKey\":\"fallback.overlay_quantum\",\"tranche\":\"fallback-overlay_quantum\"},{\"id\":\"fhir_profile_generator\",\"registryId\":\"fhir-profile-generator\",\"rendererKey\":\"fallback.health_protocol\",\"tranche\":\"fallback-health_protocol\"},{\"id\":\"smart_launch_oauth\",\"registryId\":\"smart-launch-oauth\",\"rendererKey\":\"fallback.health_protocol\",\"tranche\":\"fallback-health_protocol\"},{\"id\":\"bulk_fhir_population_ops\",\"registryId\":\"bulk-fhir-population-ops\",\"rendererKey\":\"fallback.health_protocol\",\"tranche\":\"fallback-health_protocol\"},{\"id\":\"hl7v2_feed_ops\",\"registryId\":\"hl7v2-feed-ops\",\"rendererKey\":\"fallback.health_protocol\",\"tranche\":\"fallback-health_protocol\"},{\"id\":\"clinical_workflow_events\",\"registryId\":\"clinical-workflow-events\",\"rendererKey\":\"fallback.health_protocol\",\"tranche\":\"fallback-health_protocol\"},{\"id\":\"dicomweb_imaging_ops\",\"registryId\":\"dicomweb-imaging-ops\",\"rendererKey\":\"fallback.health_protocol\",\"tranche\":\"fallback-health_protocol\"},{\"id\":\"openehr_semantic_record_ops\",\"registryId\":\"openehr-semantic-record-ops\",\"rendererKey\":\"fallback.health_protocol\",\"tranche\":\"fallback-health_protocol\"},{\"id\":\"device_telemetry_clinical\",\"registryId\":\"device-telemetry-clinical\",\"rendererKey\":\"fallback.health_protocol\",\"tranche\":\"fallback-health_protocol\"},{\"id\":\"emr_vendor_adapter\",\"registryId\":\"emr-vendor-adapter\",\"rendererKey\":\"fallback.health_protocol\",\"tranche\":\"fallback-health_protocol\"},{\"id\":\"ocpp_chargepoint_ops\",\"registryId\":\"ocpp-chargepoint-ops\",\"rendererKey\":\"fallback.health_protocol\",\"tranche\":\"fallback-health_protocol\"},{\"id\":\"ocpi_roaming_ops\",\"registryId\":\"ocpi-roaming-ops\",\"rendererKey\":\"fallback.health_protocol\",\"tranche\":\"fallback-health_protocol\"},{\"id\":\"mcp_a2a_ops\",\"registryId\":\"mcp-a2a-ops\",\"rendererKey\":\"fallback.health_protocol\",\"tranche\":\"fallback-health_protocol\"},{\"id\":\"streaming_bus_ops\",\"registryId\":\"streaming-bus-ops\",\"rendererKey\":\"fallback.health_protocol\",\"tranche\":\"fallback-health_protocol\"},{\"id\":\"service_mesh_rpc_ops\",\"registryId\":\"service-mesh-rpc-ops\",\"rendererKey\":\"fallback.health_protocol\",\"tranche\":\"fallback-health_protocol\"}],\"classicSix\":[\"code-analyzer\",\"data-processing\",\"jargon\",\"metrics\",\"network-activity\",\"system-monitoring\"],\"modernCore\":[\"agent-workflows\",\"platform-engineering\",\"observability-ai-runtime\",\"delivery-preview-ops\",\"supply-chain-security\"],\"fallbackFamilies\":[\"ai-inference-ops\",\"evaluation-and-guardrails\",\"knowledge-retrieval\",\"edge-client-runtime\",\"identity-and-trust\",\"aibom-provenance\",\"agent-boundary-security\",\"embedded-agentic-pipeline\",\"data-governance-compliance\",\"finops-capacity\",\"blockchain-protocol-ops\",\"cross-chain-interop\",\"proof-and-sequencer-ops\",\"hybrid-runtime-ops\",\"capacity-cost-controller\",\"batch-execution-tuner\",\"compiler-maintainer\",\"interop-adapter-engineer\",\"preflight-capacity-planner\",\"simulator-performance-engineer\",\"fhir-profile-generator\",\"smart-launch-oauth\",\"bulk-fhir-population-ops\",\"hl7v2-feed-ops\",\"clinical-workflow-events\",\"dicomweb-imaging-ops\",\"openehr-semantic-record-ops\",\"device-telemetry-clinical\",\"emr-vendor-adapter\",\"ocpp-chargepoint-ops\",\"ocpi-roaming-ops\",\"mcp-a2a-ops\",\"streaming-bus-ops\",\"service-mesh-rpc-ops\"],\"implementationMode\":\"family-focus-deterministic\"}",
+  "families": [
+    {
+      "id": "code_analyzer",
+      "registryId": "code-analyzer",
+      "rendererKey": "classic-six.code_analyzer",
+      "tranche": "classic-six",
+      "contextKey": "analysisFocus",
+      "contextValue": "contract-static-analysis"
+    },
+    {
+      "id": "data_processing",
+      "registryId": "data-processing",
+      "rendererKey": "classic-six.data_processing",
+      "tranche": "classic-six",
+      "contextKey": "dataWindow",
+      "contextValue": "event-log-reconciliation"
+    },
+    {
+      "id": "jargon",
+      "registryId": "jargon",
+      "rendererKey": "classic-six.jargon",
+      "tranche": "classic-six",
+      "contextKey": "languagePolicy",
+      "contextValue": "solidity-glossary"
+    },
+    {
+      "id": "metrics",
+      "registryId": "metrics",
+      "rendererKey": "classic-six.metrics",
+      "tranche": "classic-six",
+      "contextKey": "signalBlend",
+      "contextValue": "gas-runtime-latency"
+    },
+    {
+      "id": "network_activity",
+      "registryId": "network-activity",
+      "rendererKey": "classic-six.network_activity",
+      "tranche": "classic-six",
+      "contextKey": "transportMix",
+      "contextValue": "rpc-event-sse"
+    },
+    {
+      "id": "system_monitoring",
+      "registryId": "system-monitoring",
+      "rendererKey": "classic-six.system_monitoring",
+      "tranche": "classic-six",
+      "contextKey": "telemetryScope",
+      "contextValue": "solc-runtime-host"
+    },
+    {
+      "id": "agent_workflows",
+      "registryId": "agent-workflows",
+      "rendererKey": "modern-core.agent_workflows",
+      "tranche": "modern-core",
+      "contextKey": "coordinationMode",
+      "contextValue": "contract-dispatch-handshake"
+    },
+    {
+      "id": "platform_engineering",
+      "registryId": "platform-engineering",
+      "rendererKey": "modern-core.platform_engineering",
+      "tranche": "modern-core",
+      "contextKey": "platformSurface",
+      "contextValue": "solc-native-validation-lane"
+    },
+    {
+      "id": "observability_ai_runtime",
+      "registryId": "observability-ai-runtime",
+      "rendererKey": "modern-core.observability_ai_runtime",
+      "tranche": "modern-core",
+      "contextKey": "runtimeSignals",
+      "contextValue": "logs-metrics-provider-boundary"
+    },
+    {
+      "id": "delivery_preview_ops",
+      "registryId": "delivery-preview-ops",
+      "rendererKey": "modern-core.delivery_preview_ops",
+      "tranche": "modern-core",
+      "contextKey": "deliveryGuardrail",
+      "contextValue": "abi-preview-checkpoints"
+    },
+    {
+      "id": "supply_chain_security",
+      "registryId": "supply-chain-security",
+      "rendererKey": "modern-core.supply_chain_security",
+      "tranche": "modern-core",
+      "contextKey": "supplyChainPosture",
+      "contextValue": "source-bytecode-attestation"
+    },
+    {
+      "id": "ai_inference_ops",
+      "registryId": "ai-inference-ops",
+      "rendererKey": "fallback.ai_governance",
+      "tranche": "fallback-ai_governance",
+      "contextKey": "fallbackFamily",
+      "contextValue": "ai_governance"
+    },
+    {
+      "id": "evaluation_and_guardrails",
+      "registryId": "evaluation-and-guardrails",
+      "rendererKey": "fallback.ai_governance",
+      "tranche": "fallback-ai_governance",
+      "contextKey": "fallbackFamily",
+      "contextValue": "ai_governance"
+    },
+    {
+      "id": "knowledge_retrieval",
+      "registryId": "knowledge-retrieval",
+      "rendererKey": "fallback.ai_governance",
+      "tranche": "fallback-ai_governance",
+      "contextKey": "fallbackFamily",
+      "contextValue": "ai_governance"
+    },
+    {
+      "id": "edge_client_runtime",
+      "registryId": "edge-client-runtime",
+      "rendererKey": "fallback.ai_governance",
+      "tranche": "fallback-ai_governance",
+      "contextKey": "fallbackFamily",
+      "contextValue": "ai_governance"
+    },
+    {
+      "id": "identity_and_trust",
+      "registryId": "identity-and-trust",
+      "rendererKey": "fallback.ai_governance",
+      "tranche": "fallback-ai_governance",
+      "contextKey": "fallbackFamily",
+      "contextValue": "ai_governance"
+    },
+    {
+      "id": "aibom_provenance",
+      "registryId": "aibom-provenance",
+      "rendererKey": "fallback.ai_governance",
+      "tranche": "fallback-ai_governance",
+      "contextKey": "fallbackFamily",
+      "contextValue": "ai_governance"
+    },
+    {
+      "id": "agent_boundary_security",
+      "registryId": "agent-boundary-security",
+      "rendererKey": "fallback.ai_governance",
+      "tranche": "fallback-ai_governance",
+      "contextKey": "fallbackFamily",
+      "contextValue": "ai_governance"
+    },
+    {
+      "id": "embedded_agentic_pipeline",
+      "registryId": "embedded-agentic-pipeline",
+      "rendererKey": "fallback.ai_governance",
+      "tranche": "fallback-ai_governance",
+      "contextKey": "fallbackFamily",
+      "contextValue": "ai_governance"
+    },
+    {
+      "id": "data_governance_compliance",
+      "registryId": "data-governance-compliance",
+      "rendererKey": "fallback.ai_governance",
+      "tranche": "fallback-ai_governance",
+      "contextKey": "fallbackFamily",
+      "contextValue": "ai_governance"
+    },
+    {
+      "id": "finops_capacity",
+      "registryId": "finops-capacity",
+      "rendererKey": "fallback.ai_governance",
+      "tranche": "fallback-ai_governance",
+      "contextKey": "fallbackFamily",
+      "contextValue": "ai_governance"
+    },
+    {
+      "id": "blockchain_protocol_ops",
+      "registryId": "blockchain-protocol-ops",
+      "rendererKey": "fallback.security_blockchain",
+      "tranche": "fallback-security_blockchain",
+      "contextKey": "fallbackFamily",
+      "contextValue": "security_blockchain"
+    },
+    {
+      "id": "cross_chain_interop",
+      "registryId": "cross-chain-interop",
+      "rendererKey": "fallback.security_blockchain",
+      "tranche": "fallback-security_blockchain",
+      "contextKey": "fallbackFamily",
+      "contextValue": "security_blockchain"
+    },
+    {
+      "id": "proof_and_sequencer_ops",
+      "registryId": "proof-and-sequencer-ops",
+      "rendererKey": "fallback.security_blockchain",
+      "tranche": "fallback-security_blockchain",
+      "contextKey": "fallbackFamily",
+      "contextValue": "security_blockchain"
+    },
+    {
+      "id": "hybrid_runtime_ops",
+      "registryId": "hybrid-runtime-ops",
+      "rendererKey": "fallback.overlay_quantum",
+      "tranche": "fallback-overlay_quantum",
+      "contextKey": "fallbackFamily",
+      "contextValue": "overlay_quantum"
+    },
+    {
+      "id": "capacity_cost_controller",
+      "registryId": "capacity-cost-controller",
+      "rendererKey": "fallback.overlay_quantum",
+      "tranche": "fallback-overlay_quantum",
+      "contextKey": "fallbackFamily",
+      "contextValue": "overlay_quantum"
+    },
+    {
+      "id": "batch_execution_tuner",
+      "registryId": "batch-execution-tuner",
+      "rendererKey": "fallback.overlay_quantum",
+      "tranche": "fallback-overlay_quantum",
+      "contextKey": "fallbackFamily",
+      "contextValue": "overlay_quantum"
+    },
+    {
+      "id": "compiler_maintainer",
+      "registryId": "compiler-maintainer",
+      "rendererKey": "fallback.overlay_quantum",
+      "tranche": "fallback-overlay_quantum",
+      "contextKey": "fallbackFamily",
+      "contextValue": "overlay_quantum"
+    },
+    {
+      "id": "interop_adapter_engineer",
+      "registryId": "interop-adapter-engineer",
+      "rendererKey": "fallback.overlay_quantum",
+      "tranche": "fallback-overlay_quantum",
+      "contextKey": "fallbackFamily",
+      "contextValue": "overlay_quantum"
+    },
+    {
+      "id": "preflight_capacity_planner",
+      "registryId": "preflight-capacity-planner",
+      "rendererKey": "fallback.overlay_quantum",
+      "tranche": "fallback-overlay_quantum",
+      "contextKey": "fallbackFamily",
+      "contextValue": "overlay_quantum"
+    },
+    {
+      "id": "simulator_performance_engineer",
+      "registryId": "simulator-performance-engineer",
+      "rendererKey": "fallback.overlay_quantum",
+      "tranche": "fallback-overlay_quantum",
+      "contextKey": "fallbackFamily",
+      "contextValue": "overlay_quantum"
+    },
+    {
+      "id": "fhir_profile_generator",
+      "registryId": "fhir-profile-generator",
+      "rendererKey": "fallback.health_protocol",
+      "tranche": "fallback-health_protocol",
+      "contextKey": "fallbackFamily",
+      "contextValue": "health_protocol"
+    },
+    {
+      "id": "smart_launch_oauth",
+      "registryId": "smart-launch-oauth",
+      "rendererKey": "fallback.health_protocol",
+      "tranche": "fallback-health_protocol",
+      "contextKey": "fallbackFamily",
+      "contextValue": "health_protocol"
+    },
+    {
+      "id": "bulk_fhir_population_ops",
+      "registryId": "bulk-fhir-population-ops",
+      "rendererKey": "fallback.health_protocol",
+      "tranche": "fallback-health_protocol",
+      "contextKey": "fallbackFamily",
+      "contextValue": "health_protocol"
+    },
+    {
+      "id": "hl7v2_feed_ops",
+      "registryId": "hl7v2-feed-ops",
+      "rendererKey": "fallback.health_protocol",
+      "tranche": "fallback-health_protocol",
+      "contextKey": "fallbackFamily",
+      "contextValue": "health_protocol"
+    },
+    {
+      "id": "clinical_workflow_events",
+      "registryId": "clinical-workflow-events",
+      "rendererKey": "fallback.health_protocol",
+      "tranche": "fallback-health_protocol",
+      "contextKey": "fallbackFamily",
+      "contextValue": "health_protocol"
+    },
+    {
+      "id": "dicomweb_imaging_ops",
+      "registryId": "dicomweb-imaging-ops",
+      "rendererKey": "fallback.health_protocol",
+      "tranche": "fallback-health_protocol",
+      "contextKey": "fallbackFamily",
+      "contextValue": "health_protocol"
+    },
+    {
+      "id": "openehr_semantic_record_ops",
+      "registryId": "openehr-semantic-record-ops",
+      "rendererKey": "fallback.health_protocol",
+      "tranche": "fallback-health_protocol",
+      "contextKey": "fallbackFamily",
+      "contextValue": "health_protocol"
+    },
+    {
+      "id": "device_telemetry_clinical",
+      "registryId": "device-telemetry-clinical",
+      "rendererKey": "fallback.health_protocol",
+      "tranche": "fallback-health_protocol",
+      "contextKey": "fallbackFamily",
+      "contextValue": "health_protocol"
+    },
+    {
+      "id": "emr_vendor_adapter",
+      "registryId": "emr-vendor-adapter",
+      "rendererKey": "fallback.health_protocol",
+      "tranche": "fallback-health_protocol",
+      "contextKey": "fallbackFamily",
+      "contextValue": "health_protocol"
+    },
+    {
+      "id": "ocpp_chargepoint_ops",
+      "registryId": "ocpp-chargepoint-ops",
+      "rendererKey": "fallback.health_protocol",
+      "tranche": "fallback-health_protocol",
+      "contextKey": "fallbackFamily",
+      "contextValue": "health_protocol"
+    },
+    {
+      "id": "ocpi_roaming_ops",
+      "registryId": "ocpi-roaming-ops",
+      "rendererKey": "fallback.health_protocol",
+      "tranche": "fallback-health_protocol",
+      "contextKey": "fallbackFamily",
+      "contextValue": "health_protocol"
+    },
+    {
+      "id": "mcp_a2a_ops",
+      "registryId": "mcp-a2a-ops",
+      "rendererKey": "fallback.health_protocol",
+      "tranche": "fallback-health_protocol",
+      "contextKey": "fallbackFamily",
+      "contextValue": "health_protocol"
+    },
+    {
+      "id": "streaming_bus_ops",
+      "registryId": "streaming-bus-ops",
+      "rendererKey": "fallback.health_protocol",
+      "tranche": "fallback-health_protocol",
+      "contextKey": "fallbackFamily",
+      "contextValue": "health_protocol"
+    },
+    {
+      "id": "service_mesh_rpc_ops",
+      "registryId": "service-mesh-rpc-ops",
+      "rendererKey": "fallback.health_protocol",
+      "tranche": "fallback-health_protocol",
+      "contextKey": "fallbackFamily",
+      "contextValue": "health_protocol"
+    }
+  ]
+}

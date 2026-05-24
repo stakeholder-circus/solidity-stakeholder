@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""Validate scaffold-only baseline file presence.
-
-This script is scaffold-only for the Solidity HorizonLanguage target.
-No deterministic runtime validation is claimed.
-"""
+"""Validate Solidity local deterministic tranche baseline file presence."""
 
 from pathlib import Path
 
@@ -24,18 +20,21 @@ REQUIRED = [
     ".github/workflows/ci.yml",
     ".github/workflows/ci-native.yml",
     ".github/workflows/docker-smoke.yml",
+    "Makefile",
+    "contracts/StakeholderCatalog.sol",
+    "catalog.json",
+    "bin/stakeholder.mjs",
+    "tests/test_cli.sh",
 ]
-
 
 def main() -> int:
     missing = [path for path in REQUIRED if not Path(path).exists()]
     if missing:
         for path in missing:
-            print(f"missing scaffold-only baseline file: {path}")
+            print(f"missing Solidity deterministic tranche file: {path}")
         return 1
-    print("scaffold-only baseline files present; no deterministic runtime validation is claimed")
+    print("Solidity deterministic tranche baseline files present; run make test for native validation")
     return 0
-
 
 if __name__ == "__main__":
     raise SystemExit(main())

@@ -1,14 +1,19 @@
-# Status
+# solidity-stakeholder Status
 
-This repository is scaffold-only for the Solidity HorizonLanguage target. It contains baseline coordination files only. No deterministic runtime validation is claimed.
+- Phase target: deterministic first tranche
+- Phase state: native-validated local tranche
+- Program state: local deterministic widening
+- Publication state: local only, no upstream tracking, no push
+- Current implementation: Solidity contract catalog compiled by `solc`; Node runner provides deterministic CLI rendering from the same catalog data
 
-## Horizon target
+## Evidence
 
-- Language id: solidity
-- Display name: Solidity
-- Horizon status: future-wave
-- Target class: parity-target
-- Repository: solidity-stakeholder
-## Scaffold scope
+- `python3 scripts/validate_scaffold.py`
+- `make compiler-proof`
+- `make test`
 
-Current status: scaffold-only. Runtime implementation, fixture parity, CI proof, and deterministic validation are not present.
+## Open
+
+- Docker validation is deferred for M1 resource safety.
+- Full live-provider/runtime support is deferred to the second-pass provider rollout wave.
+- Publication remains blocked by the local-only policy for horizon scaffold and small-tranche work.

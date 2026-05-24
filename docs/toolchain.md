@@ -1,14 +1,13 @@
 # Toolchain
 
-This repository is scaffold-only for the Solidity HorizonLanguage target. It contains baseline coordination files only. No deterministic runtime validation is claimed.
+Solidity native validation uses Homebrew `solidity` plus an existing local Node runtime for CLI execution.
 
-## Horizon target
+## Proven commands
 
-- Language id: solidity
-- Display name: Solidity
-- Horizon status: future-wave
-- Target class: parity-target
-- Repository: solidity-stakeholder
-## Scaffold scope
+- `solc --version`
+- `node --version`
+- `solc --abi --bin contracts/StakeholderCatalog.sol -o build --overwrite`
+- `make compiler-proof`
+- `make test`
 
-Toolchain status: scaffold-only. No compiler, interpreter, formatter, package manager, test runner, or deterministic runtime validation has been selected or proven.
+Toolchain source: Homebrew bottled `solidity` 0.8.35; required Boost and Z3 dependencies were already present. Docker, Nix, npm packages, and EVM execution are not required for the current deterministic first tranche.

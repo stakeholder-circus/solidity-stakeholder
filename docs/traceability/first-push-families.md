@@ -1,14 +1,13 @@
 # First push families
 
-This repository is scaffold-only for the Solidity HorizonLanguage target. It contains baseline coordination files only. No deterministic runtime validation is claimed.
+This local tranche ports the deterministic family-focus contract into a Solidity contract catalog with a Node CLI runner.
 
-## Horizon target
+| Family group | Solidity path | Source reference | Parity class |
+| --- | --- | --- | --- |
+| classic-six | `contracts/StakeholderCatalog.sol` | current deterministic CLI family registry and smoke-contract shape | dedicated |
+| modern-core | `contracts/StakeholderCatalog.sol` | current deterministic CLI family registry and smoke-contract shape | dedicated |
+| later families | `contracts/StakeholderCatalog.sol` | grouped fallback policy in current deterministic repos | grouped fallback |
+| CLI contract | `contracts/StakeholderCatalog.sol`, `catalog.json`, `bin/stakeholder.mjs`, `tests/test_cli.sh` | small-tranche smoke contract | deterministic |
+| experimental provider | `bin/stakeholder.mjs`, `tests/test_cli.sh` | fail-fast provider policy in current deterministic repos | explicit fail-fast |
 
-- Language id: solidity
-- Display name: Solidity
-- Horizon status: future-wave
-- Target class: parity-target
-- Repository: solidity-stakeholder
-## Scaffold scope
-
-Traceability status: scaffold-only. First-push family ownership, source audit rows, fixture requirements, and deterministic validation evidence must be supplied before implementation claims.
+Rust and Java remain canonical behavioral anchors; this Solidity tranche is local-only and native-validated.
