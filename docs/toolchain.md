@@ -1,13 +1,14 @@
 # Toolchain
 
-Solidity native validation uses Homebrew `solidity` plus an existing local Node runtime for CLI execution.
+Solidity validation uses a repository-local, lockfile-backed `solc` JavaScript compiler and Node host adapter. Authoritative native and Docker gates run on GitHub Actions.
 
 ## Proven commands
 
-- `solc --version`
+- `npm ci --ignore-scripts`
+- `./node_modules/.bin/solcjs --version`
 - `node --version`
-- `solc --abi --bin contracts/StakeholderCatalog.sol -o build --overwrite`
+- `npm run build`
 - `make compiler-proof`
 - `make test`
 
-Toolchain source: Homebrew bottled `solidity` 0.8.35; required Boost and Z3 dependencies were already present. Docker, Nix, npm packages, and EVM execution are not required for the current deterministic first tranche.
+Toolchain sources: committed npm lockfile for `solc 0.8.35`, Node 22 in Docker, GitHub-hosted Node for native CI, and Nix for reproducible workspace discovery. EVM deployment is not part of this deterministic compile-and-adapter tranche.

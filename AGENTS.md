@@ -1,14 +1,14 @@
 # Repository agent instructions
 
-This repository is scaffold-only for the Solidity HorizonLanguage target. It contains baseline coordination files only. No deterministic runtime validation is claimed.
+This repository contains the Solidity contract catalog and deterministic Node host adapter. Preserve the contract/adapter boundary, lock the compiler toolchain, and keep live providers fail-fast until their dedicated tranche.
 
 ## Horizon target
 
 - Language id: solidity
 - Display name: Solidity
-- Horizon status: future-wave
+- Horizon status: implemented and remotely validated
 - Target class: parity-target
 - Repository: solidity-stakeholder
-## Scaffold scope
+## Working scope
 
-Operate this repo as scaffold-only. Do not infer runtime parity, deterministic execution, or validated behavior from these files. Future implementation work must add traceability before changing behavior.
+Keep `contracts/StakeholderCatalog.sol`, `catalog.json`, `bin/stakeholder.mjs`, tests, Docker delivery, status docs, and traceability synchronized. Significant behavior changes require Rust/Java anchor review.

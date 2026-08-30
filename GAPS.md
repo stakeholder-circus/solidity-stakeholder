@@ -6,9 +6,10 @@
 - Dedicated `classic-six + modern-core` families implemented.
 - Later families use explicit grouped fallback renderers.
 - Experimental provider flags fail fast.
+- Solidity compilation and host-adapter tests run from a committed npm lockfile.
+- Native and Docker validation plus workflow-security gates run in GitHub Actions.
 
 ## Remaining gaps
 
-- Docker validation is deferred for M1 resource safety.
 - Full live-provider/runtime support is deferred to the provider rollout wave.
-- Remote publication and required-check binding are not started.
+- EVM deployment/integration behavior beyond contract compilation is deferred.

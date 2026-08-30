@@ -1,5 +1,5 @@
-> [!WARNING]
-> This repository is AI-assisted and manually reviewed. It is local-only in the resource-safe small deterministic tranche.
+> [!NOTE]
+> This repository is AI-assisted and manually reviewed. Solidity contract behavior is compiler-validated and the deterministic host adapter is validated natively and in Docker.
 
 # solidity-stakeholder
 
@@ -16,8 +16,11 @@ Solidity implementation of the stakeholder deterministic first tranche using a c
 ## Commands
 
 - `python3 scripts/validate_scaffold.py`
+- `npm ci --ignore-scripts`
 - `make compiler-proof`
 - `make test`
 - `make build && node bin/stakeholder.mjs --list-values`
+- `docker build -t solidity-stakeholder .`
+- `docker run --rm solidity-stakeholder --list-values`
 
-Docker is intentionally not used in this M1-safe pass; native `solc` plus Node execution is the validation lane.
+GitHub Actions runs the contract, lockfile-backed Solidity compilation, Node adapter tests, Docker, dependency-review, actionlint, SAST, and workflow-security gates.
