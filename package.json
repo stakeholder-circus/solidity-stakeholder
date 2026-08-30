@@ -8,6 +8,6 @@
     "test": "NODE=node BIN=bin/stakeholder.mjs tests/test_cli.sh"
   },
   "devDependencies": {
-    "solc": "0.8.35"
+    "solc": "0.8.36"
   }
 }
