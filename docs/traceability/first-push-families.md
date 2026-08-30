@@ -10,4 +10,4 @@ This local tranche ports the deterministic family-focus contract into a Solidity
 | CLI contract | `contracts/StakeholderCatalog.sol`, `catalog.json`, `bin/stakeholder.mjs`, `tests/test_cli.sh` | small-tranche smoke contract | deterministic |
 | experimental provider | `bin/stakeholder.mjs`, `tests/test_cli.sh` | fail-fast provider policy in current deterministic repos | explicit fail-fast |
 
-Rust and Java remain canonical behavioral anchors; this Solidity tranche is local-only and native-validated.
+Rust and Java remain canonical behavioral anchors; this Solidity contract/adapter tranche is compiler, native, and Docker validated in GitHub Actions.

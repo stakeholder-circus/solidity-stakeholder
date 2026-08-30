@@ -1,17 +1,16 @@
-SOLC ?= solc
 NODE ?= node
+NPM ?= npm
 
 .PHONY: all compiler-proof build test clean
 
 all: build
 
 compiler-proof:
-	$(SOLC) --version | sed -n '1,5p'
+	./node_modules/.bin/solcjs --version
 	$(NODE) --version
 
 build:
-	mkdir -p build
-	$(SOLC) --abi --bin contracts/StakeholderCatalog.sol -o build --overwrite >/dev/null
+	$(NPM) run build
 
 test: build
 	NODE=$(NODE) BIN=bin/stakeholder.mjs tests/test_cli.sh

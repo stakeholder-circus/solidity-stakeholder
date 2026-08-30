@@ -1,4 +1,4 @@
-name: ci-native
+name: sast
 
 on:
   push:
@@ -8,7 +8,7 @@ permissions:
   contents: read
 
 jobs:
-  native:
+  solidity-compile-check:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
@@ -16,7 +16,7 @@ jobs:
           persist-credentials: false
       - name: Install locked compiler dependencies
         run: npm ci --ignore-scripts
-      - name: Compiler proof
-        run: make compiler-proof
-      - name: Compile and test
-        run: make test
+      - name: Compile Solidity contract
+        run: npm run build
+      - name: Syntax-check host adapter
+        run: node --check bin/stakeholder.mjs

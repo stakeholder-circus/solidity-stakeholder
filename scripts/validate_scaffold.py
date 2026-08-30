@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate Solidity local deterministic tranche baseline file presence."""
+"""Validate the Solidity deterministic contract/adapter baseline."""
 
 from pathlib import Path
 
@@ -20,6 +20,13 @@ REQUIRED = [
     ".github/workflows/ci.yml",
     ".github/workflows/ci-native.yml",
     ".github/workflows/docker-smoke.yml",
+    ".github/workflows/actionlint.yml",
+    ".github/workflows/dependency-review.yml",
+    ".github/workflows/sast.yml",
+    ".github/workflows/security-analysis.yml",
+    ".github/dependabot.yml",
+    "package.json",
+    "package-lock.json",
     "Makefile",
     "contracts/StakeholderCatalog.sol",
     "catalog.json",
@@ -33,7 +40,19 @@ def main() -> int:
         for path in missing:
             print(f"missing Solidity deterministic tranche file: {path}")
         return 1
-    print("Solidity deterministic tranche baseline files present; run make test for native validation")
+    status_files = ["AGENTS.md", "README.md", "STATUS.md", "GAPS.md", "PARITY.md", "docs/remotes.md"]
+    stale_markers = ("scaffold-only", "Docker validation is deferred", "local only, no upstream tracking")
+    stale = [
+        f"{path}: {marker}"
+        for path in status_files
+        for marker in stale_markers
+        if marker in Path(path).read_text(encoding="utf-8")
+    ]
+    if stale:
+        for finding in stale:
+            print(f"stale Solidity status marker: {finding}")
+        return 1
+    print("Solidity contract, host adapter, delivery, and security baseline files are present")
     return 0
 
 if __name__ == "__main__":
